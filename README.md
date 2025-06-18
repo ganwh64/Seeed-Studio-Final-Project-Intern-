@@ -60,7 +60,7 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
     * Download and install the Arduino IDE from the official Arduino website: [https://www.arduino.cc/en/software/](https://www.arduino.cc/en/software/)
 
 <p align="center">
-  <img src="inal%20Project%20Figure%201.png" alt="Arduino IDE Screenshot" width="500"/>
+  <img src="Final%20Project%20Figure%201.png" alt="Arduino IDE Screenshot" width="500"/>
 </p>
 <p align="center">
   <em>Figure 1: A Screenshot of the Arduino IDE download page</em>
