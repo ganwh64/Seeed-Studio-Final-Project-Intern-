@@ -98,9 +98,9 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
 Accurate wiring is crucial for the proper functioning of your system. Follow the diagram and instructions below carefully.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%205.1.jpg" alt="Figure 5.1" width="350"/>
-  <img src="Final%20Project%20Figure%205.2.jpg" alt="Figure 5.2" width="350"/><br>
-  <em>Figure 5: Hardware Connections</em>
+  <img src="Final%20Project%20Figure%204.1.jpg" alt="Figure 4.1" width="350"/>
+  <img src="Final%20Project%20Figure%204.2.jpg" alt="Figure 4.2" width="350"/><br>
+  <em>Figure 4: Hardware Connections</em>
 </div>
 
 ### 3.1 Step-by-Step Connection Guide
@@ -365,29 +365,29 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 1.  **Initial State (AVAILABLE)**: Upon startup or after a reset, the LED stick will glow Green, and the Wio Terminal display will show "Toilet Status: AVAILABLE".
    
 <div align="center">
-  <img src="Final%20Project%20Figure%206.jpg" alt="Figure 6" width="500"/><br>
-  <em>Figure 6: Screenshot of Wio Terminal displaying "AVAILABLE" with green NeoPixels.‬</em>
+  <img src="Final%20Project%20Figure%205.jpg" alt="Figure 5" width="500"/><br>
+  <em>Figure 5: Screenshot of Wio Terminal displaying "AVAILABLE" with green NeoPixels.‬</em>
 </div><br>
 
 2.  **Occupancy Detection (OCCUPIED)**: When a person passes within \~30 cm of the ultrasonic sensor, the system detects entry. The NeoPixel stick will change to Yellow, the Wio Terminal display will show "Toilet Status: OCCUPIED", and a short beep will sound.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%207.jpg" alt="Figure 7" width="500"/><br>
-  <em>Figure 7:‬‭ Screenshot of Wio Terminal displaying "OCCUPIED" with yellow NeoPixels.‬</em>
+  <img src="Final%20Project%20Figure%206.jpg" alt="Figure 6" width="500"/><br>
+  <em>Figure 6:‬‭ Screenshot of Wio Terminal displaying "OCCUPIED" with yellow NeoPixels.‬</em>
 </div><br>
 
 3.  **Inferred Exit & Hand Hygiene Reminder**: If the restroom is occupied and the ultrasonic sensor detects no presence for 5 seconds (configurable), the system infers the person has exited. The NeoPixel stick will change to bright Cyan, the Wio Terminal display will show "Cleanse Hands\!" and "Please use sanitiser\!", and a longer beep will sound for 3 seconds. After the reminder, the system reverts to the Green / AVAILABLE state.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%208.jpg" alt="Figure 8" width="500"/><br>
-  <em>Figure 8: Screenshot of Wio Terminal displaying "Cleanse Hands!" with cyan NeoPixels.‬‬</em>
+  <img src="Final%20Project%20Figure%207.jpg" alt="Figure 7" width="500"/><br>
+  <em>Figure 7: Screenshot of Wio Terminal displaying "Cleanse Hands!" with cyan NeoPixels.‬‬</em>
 </div><br>
 
 4.  **Manual Reset**: Pressing Wio Terminal's built-in Button A (mapped to D2) will manually reset the system to the Green / AVAILABLE state. The NeoPixel stick will briefly flash Orange, and the display will show "Toilet Reset\! AVAILABLE" with a distinct beep.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%209.jpg" alt="Figure 9" width="500"/><br>
-  <em> Figure 9: Screenshot of Wio Terminal displaying "Toilet Reset!" with orange NeoPixels.‬‬‬</em>
+  <img src="Final%20Project%20Figure%208.jpg" alt="Figure 8" width="500"/><br>
+  <em> Figure 8: Screenshot of Wio Terminal displaying "Toilet Reset!" with orange NeoPixels.‬‬‬</em>
 </div><br>
 
 ### 5.2 Practical Applications
