@@ -74,9 +74,11 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
     * Once installed, go to `Tools > Board > Seeed SAMD Boards` and select `Wio Terminal`.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%203.png" alt="Figure 3" width="350"/><br>
-  <em>Figure 3: Screenshots showing the Library Manager and each of these libraries successfully installed.‬‭</em>
+  <img src="Final%20Project%20Figure%202.1.png" alt="Figure 2.1" width="350"/>
+  <img src="Final%20Project%20Figure%202.2.png" alt="Figure 2.2" width="350"/><br>
+  <em>Figure 2: Screenshots of the Preferences window with the URL added, and the Boards Manager with "Seeed SAMD‬ Boards" installed.‬‬‭</em>
 </div><br>
+
 
 3.  **Required Libraries Installation**:
     * In the Arduino IDE, go to `Sketch > Include Library > Manage Libraries....`
@@ -87,14 +89,19 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
     * `SPI.h` and `Wire.h` are standard Arduino libraries and typically come pre-installed with the board support package.
 
 <div align="center">
-  <img src="Final%20Project%20Figure%205.1.jpg" alt="Figure 5.1" width="350"/>
-  <img src="Final%20Project%20Figure%205.2.jpg" alt="Figure 5.2" width="350"/><br>
-  <em>Figure 5: Hardware Connections</em>
-</div>
+  <img src="Final%20Project%20Figure%203.png" alt="Figure 3" width="500"/><br>
+  <em>Figure 3: Screenshots showing the Library Manager and each of these libraries successfully installed.‬‭</em>
+</div><be>
 
 ## 3. Hardware Connections
 
 Accurate wiring is crucial for the proper functioning of your system. Follow the diagram and instructions below carefully.
+
+<div align="center">
+  <img src="Final%20Project%20Figure%205.1.jpg" alt="Figure 5.1" width="350"/>
+  <img src="Final%20Project%20Figure%205.2.jpg" alt="Figure 5.2" width="350"/><br>
+  <em>Figure 5: Hardware Connections</em>
+</div>
 
 ### 3.1 Step-by-Step Connection Guide
 
