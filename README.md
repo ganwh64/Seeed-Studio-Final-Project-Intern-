@@ -1,6 +1,5 @@
 # Seeed-Studio-Final-Project-Intern-
 
-````markdown
 # Smart Restroom Occupancy & Hand Hygiene System
 
 ## 1. Overview and Objectives
