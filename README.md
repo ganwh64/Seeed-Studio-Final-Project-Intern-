@@ -4,6 +4,9 @@
 
 ## 1. Overview and Objectives
 
+![](Final Project Figure 5.1.HEIC)
+
+
 This project introduces a Smart Restroom Occupancy & Hand Hygiene System, a contactless solution designed to enhance user experience and promote public health in modern shared environments. Built around the Seeed Wio Terminal, this system provides real-time restroom occupancy status and integrates an automated hand hygiene reminder. It utilizes an ultrasonic sensor for discreet presence detection, an RGB LED stick for visual cues, and the Wio Terminal's built-in display and speaker for intuitive alerts, offering a practical and easy-to-deploy solution for various facilities.
 
 ### 1.2 Key Features
