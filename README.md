@@ -355,7 +355,7 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 <div align="center">
   <img src="Final%20Project%20Figure%206.jpg" alt="Figure 6" width="500"/><br>
   <em>Figure 6: Screenshot of Wio Terminal displaying "AVAILABLE" with green NeoPixels.‬</em>
-</div>
+</div><br>
 
 2.  **Occupancy Detection (OCCUPIED)**: When a person passes within \~30 cm of the ultrasonic sensor, the system detects entry. The NeoPixel stick will change to Yellow, the Wio Terminal display will show "Toilet Status: OCCUPIED", and a short beep will sound.
 
