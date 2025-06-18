@@ -83,6 +83,14 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
         * `Adafruit NeoPixel`: For controlling your NeoPixel RGB LED Stick.
     * `SPI.h` and `Wire.h` are standard Arduino libraries and typically come pre-installed with the board support package.
 
+<p align="center">
+  <img src="Final%20Project%20Figure%205.1.HEIC" alt="" width="350"/>
+   <img src="Final%20Project%20Figure%205.2.HEIC" alt="" width="350"/>
+</p>
+<p align="center">
+  <em>‭ Figure 5: Hardware Connections</em>
+</p>
+
 ## 3. Hardware Connections
 
 Accurate wiring is crucial for the proper functioning of your system. Follow the diagram and instructions below carefully.
