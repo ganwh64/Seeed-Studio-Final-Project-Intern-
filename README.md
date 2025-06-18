@@ -362,21 +362,21 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 <div align="center">
   <img src="Final%20Project%20Figure%207.jpg" alt="Figure 7" width="500"/><br>
   <em>Figure 7:‬‭ Screenshot of Wio Terminal displaying "OCCUPIED" with yellow NeoPixels.‬</em>
-</div>
+</div><br>
 
 3.  **Inferred Exit & Hand Hygiene Reminder**: If the restroom is occupied and the ultrasonic sensor detects no presence for 5 seconds (configurable), the system infers the person has exited. The NeoPixel stick will change to bright Cyan, the Wio Terminal display will show "Cleanse Hands\!" and "Please use sanitiser\!", and a longer beep will sound for 3 seconds. After the reminder, the system reverts to the Green / AVAILABLE state.
 
 <div align="center">
   <img src="Final%20Project%20Figure%208.jpg" alt="Figure 8" width="500"/><br>
   <em>Figure 8: Screenshot of Wio Terminal displaying "Cleanse Hands!" with cyan NeoPixels.‬‬</em>
-</div>
+</div><br>
 
 4.  **Manual Reset**: Pressing Wio Terminal's built-in Button A (mapped to D2) will manually reset the system to the Green / AVAILABLE state. The NeoPixel stick will briefly flash Orange, and the display will show "Toilet Reset\! AVAILABLE" with a distinct beep.
 
 <div align="center">
   <img src="Final%20Project%20Figure%209.jpg" alt="Figure 9" width="500"/><br>
   <em> Figure 9: Screenshot of Wio Terminal displaying "Toilet Reset!" with orange NeoPixels.‬‬‬</em>
-</div>
+</div><br>
 
 ### 5.2 Practical Applications
 
