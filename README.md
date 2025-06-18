@@ -4,18 +4,15 @@
 
 ## 1. Overview and Objectives
 
-![](Final%20Project%20Figure%201.png)
-
-
-This project introduces a Smart Restroom Occupancy & Hand Hygiene System, a contactless solution designed to enhance user experience and promote public health in modern shared environments. Built around the Seeed Wio Terminal, this system provides real-time restroom occupancy status and integrates an automated hand hygiene reminder. It utilizes an ultrasonic sensor for discreet presence detection, an RGB LED stick for visual cues, and the Wio Terminal's built-in display and speaker for intuitive alerts, offering a practical and easy-to-deploy solution for various facilities.
+This project introduces a Smart Restroom Occupancy & Hand Hygiene System, a contactless solution designed to enhance user experience and promote public health in modern shared environments. Built around the Seeed Wio Terminal, this system provides real-time restroom occupancy status and integrates an automated hand hygiene reminder. It utilises an ultrasonic sensor for discreet presence detection, an RGB LED stick for visual cues, and the Wio Terminal's built-in display and speaker for intuitive alerts, offering a practical and easy-to-deploy solution for various facilities.
 
 ### 1.2 Key Features
 
 * **Contactless Occupancy Detection**: An ultrasonic sensor accurately determines if a restroom is occupied or available without physical interaction.
-* **Real-time Visual Status**: A multi-color RGB LED stick provides immediate, highly visible indication of the restroom's status (Available, Occupied, Reset, Reminder).
+* **Real-time Visual Status**: A multi-colour RGB LED stick provides immediate, highly visible indication of the restroom's status (Available, Occupied, Reset, Reminder).
 * **Intuitive Display Interface**: The Wio Terminal's integrated LCD screen displays clear text messages for detailed status updates.
 * **Audio Alerts**: A built-in buzzer provides auditory feedback for status changes and reminders.
-* **Automated Hand Hygiene Reminder**: A unique feature that prompts users to sanitize their hands upon exiting the restroom.
+* **Automated Hand Hygiene Reminder**: A unique feature that prompts users to sanitise their hands upon exiting the restroom.
 * **Manual Reset Functionality**: A physical button allows for manual resetting of the occupancy status for maintenance or exceptional circumstances.
 
 ### 1.3 Target Audience
@@ -31,12 +28,12 @@ This documentation is tailored for:
 
 By following this guide, you will learn to:
 
-* Interface with the Seeed Wio Terminal and utilize its integrated display, speaker, and buttons.
+* Interface with the Seeed Wio Terminal and utilise its integrated display, speaker, and buttons.
 * Integrate and read data from a Grove Ultrasonic Distance Sensor.
 * Control and program a Grove RGB LED Stick for dynamic visual feedback.
 * Implement state management logic for occupancy detection (entry/exit inference).
 * Incorporate practical features like debounced button inputs and timed alerts.
-* Develop a project with clear practical value and a positive impact on user behavior.
+* Develop a project with clear practical value and a positive impact on user behaviour.
 
 ## 2. Materials and Setup
 
@@ -48,8 +45,8 @@ To replicate this project, you will need the following hardware components and s
 | :------------------------------------ | :------- | :--------------------------------------------------------------------------- | :-------------------------------------------------------- |
 | Wio Terminal                          | 1        | The central microcontroller processes sensor data and controls outputs.      | Host for internal components and external Grove modules via pins/ports |
 | Grove Ultrasonic Distance Sensor      | 1        | To detect the presence of people approaching or entering the space.          | Digital (connected to Wio Terminal's WIO\_D3 pin)  |
-| Grove RGB LED Stick (20-WS2813 Mini)  | 1        | For highly visible, color-coded occupancy status and hygiene reminders.      | Digital (connected to Wio Terminal's WIO\_D0 pin)  |
-| Wio Terminal Built-in Speaker         | 1        | Provides audible alerts for sanitizer reminders and occupancy resets.        | Internal (accessed via Speaker library)       |
+| Grove RGB LED Stick (20-WS2813 Mini)  | 1        | For highly visible, colour-coded occupancy status and hygiene reminders.      | Digital (connected to Wio Terminal's WIO\_D0 pin)  |
+| Wio Terminal Built-in Speaker         | 1        | Provides audible alerts for sanitiser reminders and occupancy resets.        | Internal (accessed via Speaker library)       |
 | Wio Terminal Built-in Button (WIO\_KEY\_A) | 1        | Allows manual reset of the occupancy count.                                  | Internal (accessed via digitalRead(WIO\_KEY\_A)) |
 | Wio Terminal Built-in TFT Display     | 1        | Displays real-time occupancy count and status messages.                      | Internal (accessed via TFT\_eSPI library)     |
 | Grove Wires                           | 2        | For all component connections to the Wio Terminal.                           | Facilitate Digital connections (for Ultrasonic and NeoPixel) |
@@ -61,6 +58,9 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
 
 1.  **Arduino IDE Installation**:
     * Download and install the Arduino IDE from the official Arduino website: [https://www.arduino.cc/en/software/](https://www.arduino.cc/en/software/)
+
+![](Final%20Project%20Figure%201.png)
+Figure 1: A Screenshot of the Arduino IDE download page‬
 
 2.  **Wio Terminal Board Support Package**:
     * Open the Arduino IDE.
@@ -181,7 +181,7 @@ void setup() {
   tft.setTextSize(2);       // Set text size
 
   pixels.begin();
-  pixels.clear();           // Set all pixel colors to 'off'
+  pixels.clear();           // Set all pixel colours to 'off'
   pixels.show();            // Update the strip to turn all pixels off
 
   pinMode(RESET_BUTTON, INPUT_PULLUP);
@@ -195,8 +195,8 @@ void setup() {
 ```
 
   * **Serial Communication**: `Serial.begin(115200)` initializes serial communication for debugging output.
-  * **Display Initialization**: `tft.begin()` initializes the Wio Terminal's display. `tft.setRotation(1)` sets it to landscape mode. `fillScreen()`, `setTextColor()`, and `setTextSize()` configure the display's appearance.
-  * **NeoPixel Initialization**: `pixels.begin()` initializes the NeoPixel strip. `pixels.clear()` sets all LEDs to off, and `pixels.show()` updates the physical strip.
+  * **Display Initialisation**: `tft.begin()` initialises the Wio Terminal's display. `tft.setRotation(1)` sets it to landscape mode. `fillScreen()`, `setTextColor()`, and `setTextSize()` configure the display's appearance.
+  * **NeoPixel Initialisation**: `pixels.begin()` initialises the NeoPixel strip. `pixels.clear()` sets all LEDs to off, and `pixels.show()` updates the physical strip.
   * **Pin Modes**: `pinMode(RESET_BUTTON, INPUT_PULLUP)` configures the button pin with an internal pull-up resistor. `pinMode(ULTRASONIC_PIN, INPUT)` sets the ultrasonic pin.
   * **Initial Status**: The system displays an "Initializing..." message, shows blue LEDs, then updates to the initial AVAILABLE status.
 
@@ -344,7 +344,7 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 1.  **Initial State (AVAILABLE)**: Upon startup or after a reset, the LED stick will glow Green, and the Wio Terminal display will show "Toilet Status: AVAILABLE".
 2.  **Occupancy Detection (OCCUPIED)**: When a person passes within \~30 cm of the ultrasonic sensor, the system detects entry. The NeoPixel stick will change to Yellow, the Wio Terminal display will show "Toilet Status: OCCUPIED", and a short beep will sound.
-3.  **Inferred Exit & Hand Hygiene Reminder**: If the restroom is occupied and the ultrasonic sensor detects no presence for 5 seconds (configurable), the system infers the person has exited. The NeoPixel stick will change to bright Cyan, the Wio Terminal display will show "Cleanse Hands\!" and "Please use sanitizer\!", and a longer beep will sound for 3 seconds. After the reminder, the system reverts to the Green / AVAILABLE state.
+3.  **Inferred Exit & Hand Hygiene Reminder**: If the restroom is occupied and the ultrasonic sensor detects no presence for 5 seconds (configurable), the system infers the person has exited. The NeoPixel stick will change to bright Cyan, the Wio Terminal display will show "Cleanse Hands\!" and "Please use sanitiser\!", and a longer beep will sound for 3 seconds. After the reminder, the system reverts to the Green / AVAILABLE state.
 4.  **Manual Reset**: Pressing Wio Terminal's built-in Button A (mapped to D2) will manually reset the system to the Green / AVAILABLE state. The NeoPixel stick will briefly flash Orange, and the display will show "Toilet Reset\! AVAILABLE" with a distinct beep.
 
 ### 5.2 Practical Applications
@@ -364,8 +364,8 @@ This project serves as a robust foundation. Here are several avenues for future 
   * **Wi-Fi Connectivity & Cloud Dashboard**: Send occupancy data to a cloud platform for remote monitoring, historical data logging, and analytics.
   * **Multi-Sensor Fusion**: Incorporate additional sensors like PIR motion sensors or millimetre-wave radar for enhanced detection reliability.
   * **Custom Enclosure**: Design and 3D-print a sleek, wall-mountable enclosure for a professional deployment.
-  * **Advanced Audio Prompts**: Utilize the `Speaker.h` library to play custom sound files or pre-recorded voice messages for detailed alerts.
-  * **Power Optimization**: Implement deep sleep modes for battery-powered deployment to extend operational life.
+  * **Advanced Audio Prompts**: Utilise the `Speaker.h` library to play custom sound files or pre-recorded voice messages for detailed alerts.
+  * **Power Optimisation**: Implement deep sleep modes for battery-powered deployment to extend operational life.
   * **Bi-directional Communication**: Allow remote control (e.g., reset status from a web dashboard) or integrate with building management systems.
   * **User Interface Improvements**: Add more sophisticated graphics to the display or integrate a small keypad for configurable settings.
 
@@ -376,9 +376,9 @@ This section addresses common issues you might encounter while building and test
 ### 6.1 Common Issues and Solutions
 
   * **Issue: My Wio Terminal display is blank or shows gibberish.**
-      * **Solution**: Ensure the `TFT_eSPI` library is correctly installed. Verify `tft.begin()` and `tft.setRotation(1)` are called in `setup()`. Check USB-C connection for stable power.
-  * **Issue: The NeoPixel stick isn't lighting up, or the colors are incorrect.**
-      * **Solution**: Double-check wiring: NeoPixel data line to Wio Terminal's Digital Pin `D0`, and `5V` and `GND` correctly wired. Ensure `NUM_LEDS` constant matches the actual number of LEDs. Large strips might require an external 5V power supply.
+      * **Solution**: Ensure the `TFT_eSPI` library is correctly installed. Verify `tft.begin()` and `tft.setRotation(1)` are called in `setup()`. Check the USB-C connection for stable power.
+  * **Issue: The NeoPixel stick isn't lighting up, or the colours are incorrect.**
+      * **Solution**: Double-check wiring: NeoPixel data line to Wio Terminal's Digital Pin `D0`, and `5V` and `GND`are  correctly wired. Ensure `NUM_LEDS` constant matches the actual number of LEDs. Large strips might require an external 5V power supply.
   * **Issue: The ultrasonic sensor gives inconsistent, 0, or very high readings.**
       * **Solution**: Verify Grove cable connection to D3 Grove port. Ensure no immediate obstructions in front of the sensor. Make sure the sensor is pointing towards the detection area, not at an angle causing echoes. Adjust `pulseIn()` timeout if a longer range is needed.
   * **Issue: The manual reset button (Button A) doesn't respond or triggers multiple times.**
@@ -392,8 +392,8 @@ This section addresses common issues you might encounter while building and test
       * **A**: Yes, but you might need to modify the `readUltrasonicDistance()` function if your sensor uses separate Trigger and Echo pins (like the HC-SR04) instead of a single shared pin like the Grove sensor.
   * **Q: How can I change the display font or size?**
       * **A**: The `TFT_eSPI` library offers various fonts and text size options. You can use `tft.setTextSize()` for scaling default fonts or `tft.setFreeFont()` for custom fonts. Refer to the TFT\_eSPI documentation for details.
-  * **Q: Can I change the LED colors for different statuses?**
-      * **A**: Absolutely\! Modify the RGB values (0-255 for Red, Green, Blue) in the `setLEDStatus()` function calls within your `loop()` and `updateToiletStatusDisplay()` functions to customize the color scheme.
+  * **Q: Can I change the LED colours for different statuses?**
+      * **A**: Absolutely\! Modify the RGB values (0-255 for Red, Green, Blue) in the `setLEDStatus()` function calls within your `loop()` and `updateToiletStatusDisplay()` functions to customise the colour scheme.
   * **Q: What if the sensor always detects something, even when the restroom is empty?**
       * **A**: This could be due to a permanent obstruction within the `DETECTION_DISTANCE_CM`. Adjust the sensor's position or reduce `DETECTION_DISTANCE_CM` to a value just beyond the obstruction but still capable of detecting a person.
 
