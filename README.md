@@ -73,6 +73,11 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
     * Search for "Seeed SAMD" and install the "Seeed SAMD Boards" package. This includes support for the Wio Terminal.
     * Once installed, go to `Tools > Board > Seeed SAMD Boards` and select `Wio Terminal`.
 
+<div align="center">
+  <img src="Final%20Project%20Figure%203.png" alt="Figure 3" width="350"/><br>
+  <em>Figure 3: Screenshots showing the Library Manager and each of these libraries successfully installed.‬‭</em>
+</div><br>
+
 3.  **Required Libraries Installation**:
     * In the Arduino IDE, go to `Sketch > Include Library > Manage Libraries....`
     * Search for and install the following libraries:
