@@ -61,6 +61,8 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
 
 <p align="center">
   <img src="Final%20Project%20Figure%201.png" alt="Arduino IDE Screenshot" width="500"/>
+</p>
+<p align="center">
   <em>Figure 1: A Screenshot of the Arduino IDE download page</em>
 </p>
 
@@ -84,6 +86,8 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
 <p align="center">
   <img src="Final%20Project%20Figure%205.1.jpg" alt="Figure 5.1" width="350"/>
   <img src="Final%20Project%20Figure%205.2.jpg" alt="Figure 5.2" width="350"/>
+</p>
+<p align="center">
   <em>Figure 5: Hardware Connections</em>
 </p>
 
@@ -354,6 +358,8 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
    
 <p align="center">
   <img src="Final%20Project%20Figure%206.jpg" alt="Figure 6" width="500"/>
+</p>
+<p align="center">
   <em>Figure 6: Screenshot of Wio Terminal displaying "AVAILABLE" with green NeoPixels.‬</em>
 </p>
 
@@ -361,6 +367,8 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 <p align="center">
   <img src="Final%20Project%20Figure%207.jpg" alt="Figure 7" width="500"/>
+</p>
+<p align="center">
   <em>Figure 7:‬‭ Screenshot of Wio Terminal displaying "OCCUPIED" with yellow NeoPixels.‬</em>
 </p>
 
@@ -368,6 +376,8 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 <p align="center">
   <img src="Final%20Project%20Figure%208.jpg" alt="Figure 8" width="500"/>
+</p>
+<p align="center">
   <em>Figure 8: Screenshot of Wio Terminal displaying "Cleanse Hands!" with cyan NeoPixels.‬‬</em>
 </p>
 
@@ -375,9 +385,10 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 <p align="center">
   <img src="Final%20Project%20Figure%209.jpg" alt="Figure 9" width="500"/>
+</p>
+<p align="center">
   <em> Figure 9: Screenshot of Wio Terminal displaying "Toilet Reset!" with orange NeoPixels.‬‬‬</em>
 </p>
-
 
 ### 5.2 Practical Applications
 
