@@ -84,11 +84,11 @@ Before uploading the code to your Wio Terminal, you'll need to set up your Ardui
     * `SPI.h` and `Wire.h` are standard Arduino libraries and typically come pre-installed with the board support package.
 
 <p align="center">
-  <img src="Final%20Project%20Figure%205.1.HEIC" alt="" width="350"/>
-   <img src="Final%20Project%20Figure%205.2.HEIC" alt="" width="350"/>
+  <img src="images/figure5_1.png" alt="Figure 5.1" width="350"/>
+  <img src="images/figure5_2.png" alt="Figure 5.2" width="350"/>
 </p>
 <p align="center">
-  <em>‭ Figure 5: Hardware Connections</em>
+  <em>Figure 5: Hardware Connections</em>
 </p>
 
 ## 3. Hardware Connections
