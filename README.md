@@ -35,6 +35,20 @@ By following this guide, you will learn to:
 * Incorporate practical features like debounced button inputs and timed alerts.
 * Develop a project with clear practical value and a positive impact on user behaviour.
 
+### 1.4 Learning Outcomes
+
+By following this guide, you will learn to:
+
+* Interface with the Seeed Wio Terminal and utilise its integrated display, speaker, and buttons.
+* Integrate and read data from a Grove Ultrasonic Distance Sensor.
+* Control and program a Grove RGB LED Stick for dynamic visual feedback.
+* Implement state management logic for occupancy detection (entry/exit inference).
+* Incorporate practical features like debounced button inputs and timed alerts.
+* Develop a project with clear practical value and a positive impact on user behaviour.
+
+### 1.5 Development Journey & Philosophy
+At the very beginning, I was captivated by the sheer number of Grove modules available and envisioned a project with an exhaustive list of functions. My initial instinct was that 'more is better.' However, this led to significant challenges like debugging nightmares due to tangled code and hardware, hitting the Wio Terminal's resource limitations, resulting in slow performance, and difficulty in managing complex power requirements. I quickly learned that the Wio Terminal excels as an 'edge computing' device, perfectly suited for specific, well-defined IoT tasks rather than trying to be a jack-of-all-trades. After several attempts and facing these frustrating but valuable 'failures,' I had a critical realisation: True innovation isn't about how many sensors or actuators you can pack into a device, but how a few simple, carefully chosen tools can complement each other to create something truly meaningful, scalable, and elegantly solve a specific problem. It's about making a seemingly simple task incredibly effective, rather than making complicated tasks superficially easy.
+
 ## 2. Materials and Setup
 
 To replicate this project, you will need the following hardware components and software tools.
