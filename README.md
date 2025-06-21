@@ -38,17 +38,6 @@ By following this guide, you will learn to:
 * Incorporate practical features like debounced button inputs and timed alerts.
 * Develop a project with clear practical value and a positive impact on user behaviour.
 
-### 1.4 Learning Outcomes
-
-By following this guide, you will learn to:
-
-* Interface with the Seeed Wio Terminal and utilise its integrated display, speaker, and buttons.
-* Integrate and read data from a Grove Ultrasonic Distance Sensor.
-* Control and program a Grove RGB LED Stick for dynamic visual feedback.
-* Implement state management logic for occupancy detection (entry/exit inference).
-* Incorporate practical features like debounced button inputs and timed alerts.
-* Develop a project with clear practical value and a positive impact on user behaviour.
-
 ### 1.5 Development Journey & Philosophy
 At the very beginning, I was captivated by the sheer number of Grove modules available and envisioned a project with an exhaustive list of functions. My initial instinct was that 'more is better.' However, this led to significant challenges like debugging nightmares due to tangled code and hardware, hitting the Wio Terminal's resource limitations, resulting in slow performance, and difficulty in managing complex power requirements. I quickly learned that the Wio Terminal excels as an 'edge computing' device, perfectly suited for specific, well-defined IoT tasks rather than trying to be a jack-of-all-trades. After several attempts and facing these frustrating but valuable 'failures,' I had a critical realisation: True innovation isn't about how many sensors or actuators you can pack into a device, but how a few simple, carefully chosen tools can complement each other to create something truly meaningful, scalable, and elegantly solve a specific problem. It's about making a seemingly simple task incredibly effective, rather than making complicated tasks superficially easy.
 
@@ -409,8 +398,15 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 ### 5.2 Practical Applications
 
-The core principles of this system can be adapted for various smart space management scenarios:
+While our initial focus was on promoting hygiene among children, the beauty of this system lies in its foundational simplicity and adaptability. It's not just for small kids; its core functionality is non-contact presence detection combined with clear visual and audio reminders, making it invaluable for a wide range of applications.
 
+  * Elderly Care: For elderly individuals with dementia, who may forget crucial safety steps like turning off the fire stove or water taps, this system could be easily adapted. Imagine a gentle, automated reminder system based on detected presence, designed to enhance safety and provide peace of mind in their living environment.
+  * Resource Management: Beyond personal safety and hygiene, the same principles can be applied to resource management, such as a carpark system to track available spaces (occupied vs. empty), or even indicating the occupancy of meeting rooms or shared facilities.
+  * Meeting Room Status Indicator: Place the sensor at the doorway to show if a meeting room is in use.
+  * Private Office Occupancy: Discreetly indicate if a private office is occupied or available.
+  * Resource Availability: Monitor the occupancy of shared resources like study carrels, sound booths, or equipment rooms.
+  * Queue Management: Detect if a service counter or specific waiting area is free or occupied, aiding in customer flow.
+  * Home Automation: Trigger smart lighting or HVAC adjustments based on room occupancy.
   * Meeting Room Status Indicator
   * Private Office Occupancy
   * Resource Availability (e.g., study carrels, sound booths)
