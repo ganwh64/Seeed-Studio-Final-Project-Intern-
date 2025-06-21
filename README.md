@@ -400,18 +400,13 @@ Once assembled and programmed, the Smart Restroom Occupancy System operates auto
 
 While our initial focus was on promoting hygiene among children, the beauty of this system lies in its foundational simplicity and adaptability. It's not just for small kids; its core functionality is non-contact presence detection combined with clear visual and audio reminders, making it invaluable for a wide range of applications.
 
-  * Elderly Care: For elderly individuals with dementia, who may forget crucial safety steps like turning off the fire stove or water taps, this system could be easily adapted. Imagine a gentle, automated reminder system based on detected presence, designed to enhance safety and provide peace of mind in their living environment.
-  * Resource Management: Beyond personal safety and hygiene, the same principles can be applied to resource management, such as a carpark system to track available spaces (occupied vs. empty), or even indicating the occupancy of meeting rooms or shared facilities.
-  * Meeting Room Status Indicator: Place the sensor at the doorway to show if a meeting room is in use.
-  * Private Office Occupancy: Discreetly indicate if a private office is occupied or available.
-  * Resource Availability: Monitor the occupancy of shared resources like study carrels, sound booths, or equipment rooms.
-  * Queue Management: Detect if a service counter or specific waiting area is free or occupied, aiding in customer flow.
-  * Home Automation: Trigger smart lighting or HVAC adjustments based on room occupancy.
-  * Meeting Room Status Indicator
-  * Private Office Occupancy
-  * Resource Availability (e.g., study carrels, sound booths)
-  * Queue Management
-  * Home Automation (e.g., smart lighting or HVAC adjustments)
+  * **Elderly Care**: For elderly individuals with dementia, who may forget crucial safety steps like turning off the fire stove or water taps, this system could be easily adapted. Imagine a gentle, automated reminder system based on detected presence, designed to enhance safety and provide peace of mind in their living environment.
+  * **Resource Management**: Beyond personal safety and hygiene, the same principles can be applied to resource management, such as a carpark system to track available spaces (occupied vs. empty), or even indicating the occupancy of meeting rooms or shared facilities.
+  * **Meeting Room Status Indicator**: Place the sensor at the doorway to show if a meeting room is in use.
+  * **Private Office Occupancy**: Discreetly indicate if a private office is occupied or available.
+  * **Resource Availability**: Monitor the occupancy of shared resources like study carrels, sound booths, or equipment rooms.
+  * **Queue Management**: Detect if a service counter or specific waiting area is free or occupied, aiding in customer flow.
+  * **Home Automation**: Trigger smart lighting or HVAC adjustments based on room occupancy.
 
 ### 5.3 Possible Enhancements
 
