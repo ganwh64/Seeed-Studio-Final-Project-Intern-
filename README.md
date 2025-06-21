@@ -1,4 +1,4 @@
-# Seeed-Studio-Final-Project-Intern-
+# Seeed Studio Final Project (Intern)
 
 # Smart Restroom Occupancy & Hand Hygiene System
 
